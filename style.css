@@ -1,16 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #1a1a1a;
+}
+
 body {
     
 }
 
+h1, h2 {
+    margin: .5em 0 .5em 0;
+
+}
+.project-img {
+    width: 250px;
+    height: 200px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    background-color: #ff4d4d;
+}
+
+ul li{
+    margin-left: 1em;
+    list-style: none;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+}
+
 .riley {
-    width: 50px;
+    width: 6em;
+    height: 6em;
     border-radius: 50%;
+}
+
+.intro-container {
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    gap: 1em
+}
+
+.intro {
+    
+}
+
+.write-up{
+    padding: 2em;
 }
 
 .project-container {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5em;
+    align-items: center;
+    text-align: center;
 }
 
 .project-header {
@@ -27,8 +80,9 @@ margin: 20px 0
 .nft-container,
 .splash-container,
 .chrome-container {
-    display: flex;
-    flex-direction: column;
-    width: 200px;
-    height: 200px;
+width: 300px;
+min-height: 300px;
+padding: 1em;
+background-color: #ff6363;
+border-radius: 10px;
 }
