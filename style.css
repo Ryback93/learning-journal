@@ -14,11 +14,12 @@ html {
 }
 
 body {
-    background: linear-gradient(to right, #f0f0f0, #e4e4e4)
+    background: linear-gradient(to right, #2f2f2f, #323232);
+    color:#eaeaea
 }
 
 time {
-    font-size: 1.125em
+    font-size: 1em
 }
 
 h1, h2, h3 {
@@ -26,7 +27,7 @@ h1, h2, h3 {
 }
 
 p, h1, h2, h3 {
-    color: #333;
+    color: white;
 }
 
 h1 {
@@ -44,10 +45,9 @@ p {
     line-height: 1.6;
 }
 
-.journal-title {
+    .journal-title {
     font-weight: bold;
-    max-width: 190px;
-    text-align: center;
+    margin-bottom: 4px;
 }
 
 .nav-container {
@@ -55,7 +55,31 @@ p {
     justify-content: space-between;
     align-items: center;
     padding: 1em;
-    background-color: #f5f5f5;
+    background-color: #1f1f1f;
+    color: #e0e0e0;
+    margin: 0 auto;
+}
+
+.nav-left,
+.nav-right {
+    flex: 1;
+}
+
+.nav-center {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.journal-icon {
+    width: 48px;
+    height: auto;
+}
+
+.nav-right ul {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
 }
 
 ul li {
@@ -78,14 +102,15 @@ ul {
     text-decoration: none;
     padding: 4px;
     border: none;
-    background-color: #f0f0f0;
+    color:white;
+    background-color: #2f2f2f;
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 /* index */
 
-header, .write-up, .project-container {
+header, .project-container {
     margin-bottom: 3rem;
 }
 
@@ -148,7 +173,7 @@ header, .write-up, .project-container {
     max-width: 300px;
     min-height: 300px;
     padding: 1em;
-    background-color: #f5f5f5;
+    background-color: #4a4a4a;
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
@@ -190,7 +215,7 @@ footer {
         overflow: hidden;
      } 
     
-    .lofi-boy {
+    .anime-boy {
         width: 100%;
         height: auto;
         object-fit: cover;
@@ -231,10 +256,24 @@ footer {
         color: #2c2c2c;
     }
 
+@media (max-width: 1100px) {
+    .nav-left{
+        flex-direction: column;
+    }
+}
+
 @media (max-width: 768px) {
 
     h2 { 
         margin: .5em 0 .5em 0;
+    }
+
+    .journal-title {
+        
+            max-width: 180px;
+            text-align: center;
+            margin: 0 auto;
+        
     }
 
     .nav-container {
